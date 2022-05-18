@@ -1,0 +1,79 @@
+<svg [attr.width]="svgWidth" [attr.height]="svgHeight" #svgElement>
+  <rect
+    x="0"
+    y="0"
+    [attr.width]="svgWidth"
+    [attr.height]="svgHeight"
+    fill="url(#grad2)"
+    #backgroundElement
+  ></rect>
+  <image
+    [attr.x]="icon.elementPosition.x"
+    [attr.y]="icon.position.y"
+    [attr.width]="icon.size.width"
+    [attr.height]="icon.size.height"
+    xlink:href="https://brandzy-staging.s3.amazonaws.com/uploads/icon_set/original/5294/original.svg"
+    #iconElement
+  ></image>
+
+  <text
+    [attr.x]="primary.elementPosition.x"
+    [attr.y]="primary.position.y"
+    [attr.font-size]="primary.content.fontSize"
+    class="primary-text"
+    id="primary-text"
+    #primaryTextElement
+  >
+    Username
+  </text>
+  <text
+    [attr.x]="secondary.elementPosition.x"
+    [attr.y]="secondary.position.y"
+    [attr.font-size]="secondary.content.fontSize"
+    [attr.letter-spacing]="secondary.content.letterSpacing"
+    class="secondary-text"
+    #secondaryTextElement
+  >
+    Tagline
+  </text>
+
+  <rect
+    x="0"
+    y="0"
+    [attr.width]="svgWidth"
+    [attr.height]="svgHeight"
+    fill="url(#grad2)"
+    #backgroundElement
+  ></rect>
+
+  <line
+    [attr.x1]="lines?.top?.x1"
+    [attr.y1]="lines?.top?.y1"
+    [attr.x2]="lines?.top?.x2"
+    [attr.y2]="lines?.top?.y2"
+    stroke="black"
+  />
+  <line
+    [attr.x1]="lines?.left?.x1"
+    [attr.y1]="lines?.left?.y1"
+    [attr.x2]="lines?.left?.x2"
+    [attr.y2]="lines?.left?.y2"
+    stroke="black"
+  />
+  <line
+    [attr.x1]="lines?.right?.x1"
+    [attr.y1]="lines?.right?.y1"
+    [attr.x2]="lines?.right?.x2"
+    [attr.y2]="lines?.right?.y2"
+    stroke="black"
+  />
+  <line
+    [attr.x1]="lines?.bottom?.x1"
+    [attr.y1]="lines?.bottom?.y1"
+    [attr.x2]="lines?.bottom?.x2"
+    [attr.y2]="lines?.bottom?.y2"
+    stroke="black"
+  />
+
+  <circle cx="50" cy="50" r="10" fill="red " opacity="30%" />
+</svg>

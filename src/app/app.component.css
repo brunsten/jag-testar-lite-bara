@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Nexa Light';
+  src: url('https://brandzy-staging.s3.amazonaws.com/uploads/font/file/83/Nexa_Light.otf')
+    format('opentype');
+}
+
+svg .primary-text {
+  font-family: 'Nexa Light';
+}
+svg .secondary-text {
+  font-family: 'Nexa Light';
+}
+
+svg {
+  border: 1px solid grey;
+}
